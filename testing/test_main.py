@@ -13,10 +13,12 @@ from main import *
 class UnitTests(unittest.TestCase) :
    def test_N(self) : 
       myx = np.loadtxt("data.dat")
-      assert( vc.check_vars("N",len(myx) )
+      assert( vc.check_vars("N",len(myx)) )
+
    def test_L(self) : 
       myx = np.loadtxt("data.dat")
-      assert( vc.check_vars("L",min(myx) )
+      assert( vc.check_vars("L",min(myx)) )
+
    def test_U(self) : 
       myx = np.loadtxt("data.dat")
-      assert( vc.check_vars("U",max(myx) )
+      assert( vc.check_vars("U",max(myx)) )
