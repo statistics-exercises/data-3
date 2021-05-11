@@ -4,3 +4,6 @@ import numpy as np
 x = np.loadtxt("data.dat")
 
 # Your code will go here
+N = len(x)
+L = min(x)
+U = max(x)
